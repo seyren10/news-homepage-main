@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | News homepage</title>
+
+    <!-- My Custom Imports -->
+    <!-- g-font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- my css -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- javascript -->
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <nav class="flex">
+        <img class="logo" src="assets/images/logo.svg" alt="logo" />
+        <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false"><span class="sr-only">Menu</span></button>
+        <ul class="primary-navigation" id="primary-navigation" aria-hidden="true">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">New</a></li>
+          <li><a href="#">Popular</a></li>
+          <li><a href="#">Trending</a></li>
+          <li><a href="#">Categories</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="grid">
+        <picture class="grid_image">
+          <source
+            srcset="assets/images/image-web-3-mobile.jpg"
+            media="(max-width: 35em)"
+          />
+          <img
+            src="assets/images/image-web-3-desktop.jpg"
+            alt="branding image"
+          />
+        </picture>
+
+        <article class="grid_features">
+          <h2 class="features_heading">New</h2>
+          <div class="feature">
+            <h3 class="feature_title">Hydrogen VS Electric Cars</h3>
+            <p class="feature_details">
+              Will hydrogen-fueled cars ever catch up to EVs?
+            </p>
+          </div>
+
+          <div class="feature">
+            <h3 class="feature_title">The Downsides of AI Artistry</h3>
+            <p class="feature_details">
+              What are the possible adverse effects of on-demand AI image
+              generation?
+            </p>
+          </div>
+          <div class="feature">
+            <h3 class="feature_title">Is VC Funding Drying Up?</h3>
+            <p class="feature_details">
+              Private funding by VC firms is down 50% YOY. We take a look at
+              what that means.
+            </p>
+          </div>
+        </article>
+
+        <h1 class="grid_heading">The Bright Future of Web 3.0?</h1>
+
+        <div class="grid_cta">
+          <p>
+            We dive into the next evolution of the web that claims to put the
+            power of the platforms back into the hands of the people. But is it
+            really fulfilling its promise?
+          </p>
+          <a href="#" class="button">Read more</a>
+        </div>
+      </section>
+
+      <section class="grid-list">
+        <div class="list-item">
+          <img src="assets/images/image-retro-pcs.jpg" alt="retro computer" />
+          <div class="flow">
+            <div class="list-item_number" aria-hidden="true">01</div>
+            <a href="#" class="list-item_heading">Reviving Retro PCs</a>
+            <p class="list-item_details">
+              What happens when old PCs are given modern upgrades?
+            </p>
+          </div>
+        </div>
+
+        <div class="list-item">
+          <img src="assets/images/image-top-laptops.jpg" alt="top laptops" />
+          <div class="flow">
+            <div class="list-item_number" aria-hidden="true">02</div>
+            <a href="#" class="list-item_heading">Top 10 Laptops of 2022</a>
+            <p class="list-item_details">
+              Our best picks for various needs and budgets.
+            </p>
+          </div>
+        </div>
+
+        <div class="list-item">
+          <img
+            src="assets/images/image-gaming-growth.jpg"
+            alt="console controller"
+          />
+          <div class="flow">
+            <div class="list-item_number" aria-hidden="true">03</div>
+            <a href="#" class="list-item_heading">The Growth of Gaming</a>
+            <p class="list-item_details">
+              How the pandemic has sparked fresh opportunities.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://facebook.com/rv.gagarin" target="_blank">Roy Victor Gagarin</a>.
+    </div>
+  </body>
+</html>
